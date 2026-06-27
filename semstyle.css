@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:#f5f1e8;
+    color:#222;
+    padding:20px;
+}
+
+.top-header{
+    text-align:center;
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    padding:20px 0;
+}
+
+.mini-header{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.top-header h1{
+    font-size:6rem;
+    letter-spacing:5px;
+}
+
+.tagline{
+    font-size:1.2rem;
+    letter-spacing:4px;
+    margin-top:10px;
+}
+
+nav{
+    border-bottom:3px solid black;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav li{
+    padding:15px 20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.headline{
+    text-align:center;
+    margin:30px 0;
+}
+
+.headline h2{
+    font-size:3rem;
+}
+
+.headline p{
+    font-style:italic;
+    margin-top:10px;
+}
+
+.hero-section{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:25px;
+}
+
+.main-story img{
+    width:100%;
+    border:2px solid #999;
+}
+
+.article-columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:20px;
+}
+
+.article-columns h3{
+    border-bottom:2px solid black;
+    margin-bottom:10px;
+    padding-bottom:5px;
+}
+
+.article-columns p{
+    text-align:justify;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.small-image{
+    width:100%;
+    margin:10px 0;
+}
+
+.sidebar{
+    border:2px solid black;
+    padding:15px;
+}
+
+.sidebar h3{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.sidebar img{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:12px 0;
+    border-bottom:1px dashed gray;
+}
+
+.testimonial{
+    margin-top:30px;
+    text-align:center;
+}
+
+blockquote{
+    font-style:italic;
+    margin-bottom:15px;
+}
+
+.learning-section{
+    margin-top:40px;
+    border:2px solid black;
+    padding:20px;
+}
+
+.learning-section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.learning-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.card{
+    text-align:center;
+    padding:15px;
+    border-right:1px solid gray;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    border-top:2px solid black;
+    padding-top:20px;
+    font-size:18px;
+}
+
+@media(max-width:900px){
+
+    .hero-section{
+        grid-template-columns:1fr;
+    }
+
+    .article-columns{
+        grid-template-columns:1fr;
+    }
+
+    .learning-grid{
+        grid-template-columns:1fr;
+    }
+
+    .top-header h1{
+        font-size:3rem;
+    }
+
+    .mini-header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
